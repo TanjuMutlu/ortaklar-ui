@@ -1,0 +1,27 @@
+.main-brands{
+    margin: auto;
+    max-width: 1600px;
+    position: relative;
+    top: -200px;
+    overflow: hidden;
+}
+.title-brands{
+    margin: auto;
+    max-width: 1600px;
+    position: relative;
+    left: 510px;
+    padding: 40px;
+}
+.brand-logo{
+    filter:grayscale(100%);
+}
+.brand-logo:hover{
+    filter:grayscale(0%);
+}
+#ayakkabiDunyasi{padding-left: 20px; margin-top: 10px;}
+#boyner{padding-left: 40px;margin-top: 10px;}
+#flo{padding-left: 10px;margin-top: 10px;}
+#hummel{margin-left: 0px;margin-top: 20px;}
+#lumberjack{margin-top: 30px;}
+#mp{margin-left: 10px;margin-top: -5px;}
+#polo{margin-left: 10px;margin-top: 10px;}

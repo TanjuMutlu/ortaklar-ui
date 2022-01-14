@@ -1,0 +1,53 @@
+.line-indicator-card li {
+    background: #C7C9D9;
+    width: 8px;
+    height: 8px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.line-indicator-card li.slick-active{
+    background: #D50000;
+    z-index: 1;
+}
+.buttons{
+    margin:auto;
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1700px;
+}
+.buttonPrev{
+    position: absolute;
+    left: 6%;
+    top: 350px;
+    width: 45;
+    height: 45;
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+    cursor: pointer;
+    z-index: 1;
+}
+.buttonNext{
+    top: 350px;
+    left: 89%;
+    position: absolute;
+    width: 45;
+    height: 45;
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+    cursor: pointer;
+    z-index: 1;
+}
+.slider-div{
+    width: 78%;
+    max-width: 1600px;
+    margin:auto;
+}
+.main-div{
+    margin-top: 50px;
+    height: 650px;
+    background:#FBEFEF;
+    overflow: hidden;
+}

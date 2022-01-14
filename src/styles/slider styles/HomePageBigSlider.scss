@@ -1,0 +1,9 @@
+.line-indicator li {
+    background: #C7C9D9;
+    width: 34px;
+    height: 4px;
+    border-radius: 20px;
+}
+.line-indicator li.slick-active{
+    background: #D50000;
+}
