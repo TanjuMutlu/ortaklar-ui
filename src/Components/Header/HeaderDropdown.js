@@ -5,8 +5,15 @@ import MenuItem from "@mui/material/MenuItem";
 import { Typography, Icon } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons/faAngleDown";
+import makeStyles from "@mui/styles/makeStyles";
+
+const useStyles = makeStyles((theme) => ({
+  menuItem: { height: "25px", width: "55px", marginLeft: "-10px" },
+  icon: { marginLeft: "10px" },
+}));
 
 export default function HeaderDropdown() {
+  const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -27,13 +34,17 @@ export default function HeaderDropdown() {
         disableRipple={true}
         style={{
           left: "92%",
-          top: "80px",
+          top: "70px",
           position: "absolute",
           backgroundColor: "transparent",
         }}
       >
         <Typography variant="h5">TR</Typography>
-        <FontAwesomeIcon icon={faAngleDown} size="1x" />
+        <FontAwesomeIcon
+          icon={faAngleDown}
+          size="1x"
+          className={classes.icon}
+        />
       </Button>
 
       <Menu
@@ -49,8 +60,11 @@ export default function HeaderDropdown() {
           onClick={handleClose}
           style={{ backgroundColor: "transparent" }}
           disableRipple={true}
+          className={classes.menuItem}
         >
-          <Typography variant="h5">EN</Typography>
+          <Typography variant="h5" className={classes.menuItemText}>
+            EN
+          </Typography>
         </MenuItem>
       </Menu>
     </div>

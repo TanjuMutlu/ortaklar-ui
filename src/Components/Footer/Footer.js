@@ -133,7 +133,7 @@ export default function Footer() {
               className={classes.button}
               style={{ background: "transparent" }}
             >
-              <Typography variant="h6" color="#6B7588">
+              <Typography variant="h6" color="#6B7588" sx={{marginRight:'11px'}}>
                 Flyer
               </Typography>
             </Button>

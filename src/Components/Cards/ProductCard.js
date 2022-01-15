@@ -43,8 +43,10 @@ const useStyles = makeStyles((theme) => ({
     width: "270px",
     height: "270px",
     filter: "grayscale(100%)",
+    transition: "0.5s",
     "&:hover": {
       filter: "grayscale(0%)",
+      transition: "0.5s",
     },
   },
 }));

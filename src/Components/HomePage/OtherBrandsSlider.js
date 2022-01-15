@@ -16,6 +16,8 @@ import lumberjack from "./img/lumberjack.png";
 import mp from "./img/MP.png";
 import polo from "./img/polo.png";
 
+const slideBalancer = <div></div>
+
 export default class SliderPostBox extends Component {
   render() {
     const settings = {
@@ -45,6 +47,7 @@ export default class SliderPostBox extends Component {
               [lumberjack,"lumberjack"],
               [mp,"mp"],
               [polo,"polo"],
+              [slideBalancer,'slideBalancer']
             ].map((i) => (
               <img id={i[1]} src={i[0]} className={"brand-logo"} />
             ))}

@@ -16,7 +16,12 @@ const useStyles = makeStyles((theme) => ({
   info: { background: "#F4F5F7", height: "760px" },
   contactForm: {},
   infoLink: { color: "#D50000" },
-  submitButton: { color: "#fff", width: "100%", height: "48px" },
+  submitButton: {
+    color: "#fff",
+    width: "100%",
+    height: "48px",
+    marginTop: "20px",
+  },
   checkboxLabel: { fontSize: "16px" },
   redUnderLine: {
     width: "60px",
@@ -157,7 +162,7 @@ export default function Contact() {
               <Grid item xs={10}>
                 <FormGroup>
                   <FormControlLabel
-                    control={<Checkbox color="secondary" disableRipple={1}/>}
+                    control={<Checkbox color="secondary" disableRipple={1} />}
                     label={
                       <Typography
                         color="primary"
@@ -168,7 +173,7 @@ export default function Contact() {
                     }
                   />
                   <FormControlLabel
-                    control={<Checkbox color="secondary" disableRipple={1}/>}
+                    control={<Checkbox color="secondary" disableRipple={1} />}
                     label={
                       <Typography
                         color="primary"
