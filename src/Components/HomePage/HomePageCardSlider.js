@@ -85,7 +85,7 @@ const HomePageCardSlider = () => {
             ["title7", "body7", ortaklar, "/"],
 
           ].map((i) => (
-            <Card title={i[0]} body={i[1]} img={i[2]} cardLink={i[3]} />
+            <Card title={i[0]} body={i[1]} img={i[2]} cardLink={i[3]} key={i[1]} />
           ))}
         </Slider>
       </div>

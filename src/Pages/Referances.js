@@ -25,7 +25,20 @@ const useStyles = makeStyles((theme) => ({
   pinkRectangle: { position: "absolute", marginLeft: "52%" },
   dots: { position: "absolute", margin: "150px 0 0 85.3%" },
   brandCards: { position: "relative", margin: "15% 0 0 20%" },
-  card: { width: "240px", height: "120px" },
+  card: { width: "240px", height: "120px", margin: "auto" },
+  cardImg: {
+    maxHeight: "100px",
+    maxWidth: "180px",
+    position: "relative",
+    margin: "auto",
+    display: "block",
+  },
+  cardImgWrap: {
+    height: "70px",
+    width: "fit-content",
+    marginTop: "10%",
+    margin: "auto",
+  },
 }));
 
 export default function Referances() {
@@ -70,7 +83,9 @@ export default function Referances() {
           ].map((i) => (
             <Grid item>
               <Card elevation={2} className={classes.card}>
-                <img src={i} className={classes.cardImg} />
+                <div className={classes.cardImgWrap}>
+                  <img src={i} className={classes.cardImg} />
+                </div>
               </Card>
             </Grid>
           ))}

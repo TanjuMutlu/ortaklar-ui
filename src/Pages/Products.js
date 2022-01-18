@@ -13,8 +13,15 @@ import Card from "../Components/Cards/ProductCard";
 import BigCard from "../Components/Cards/ProductCardBig";
 
 const useStyles = makeStyles((theme) => ({
-  main: { background: "linear-gradient(360deg, #FFF 0%, #F4F5F7 100%)" },
-  dropdownsGrid: { position: "absolute", padding: "20px 0 20px 155px" },
+  main: {
+    background: "linear-gradient(360deg, #FFF 0%, #F4F5F7 100%)",
+    overflow: "hidden",
+  },
+  dropdownsGrid: {
+    position: "absolute",
+    padding: "20px 0 20px 155px",
+    overflow: "hidden",
+  },
   dropdownButton: {},
   dropdownText: { fontSize: "18px", textTransform: "none" },
   Line: { position: "absolute", marginTop: "5.5%", width: "100%" },
@@ -23,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   icon: { marginLeft: "5px" },
 }));
 
-const Products = ({data}) => {
+const Products = ({ data }) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);

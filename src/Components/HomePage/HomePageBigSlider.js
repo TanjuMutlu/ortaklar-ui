@@ -40,7 +40,7 @@ export default class HomePageBigSlider extends Component {
             ["title3", "body3", PepinoYesilTuruncu],
             ["title4", "body4", deneme],
           ].map((i) => (
-            <BigSliderItem title={i[0]} body={i[1]} img={i[2]} />
+            <BigSliderItem title={i[0]} body={i[1]} img={i[2]} key={i[1]} />
           ))}
         </Slider>
       </div>

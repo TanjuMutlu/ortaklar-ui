@@ -57,9 +57,9 @@ const useStyles = makeStyles((theme) => ({
     left: "60%",
     top: "26%",
   },
-  titlebody1: { paddingTop: "90px", fontSize: "18px" },
-  titlebody2: { paddingTop: "80px", fontSize: "18px" },
-  titlebody3: { paddingTop: "80px", fontSize: "18px" },
+  titlebody1: { paddingTop: "90px", fontSize: "18px", marginRight: "20px" },
+  titlebody2: { paddingTop: "80px", fontSize: "18px", marginRight: "20px" },
+  titlebody3: { paddingTop: "80px", fontSize: "18px", marginRight: "20px" },
 }));
 
 export default function Why({}) {
